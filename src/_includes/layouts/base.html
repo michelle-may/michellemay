@@ -42,6 +42,9 @@
 
   <a class="sr-only" href="#main">Skip to content</a>
 
+  {# include header #}
+  {% include "partials/header.njk" %}
+
   {# include content #}
   {{ content | safe }}
 
