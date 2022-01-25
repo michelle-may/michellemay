@@ -2,7 +2,7 @@
   "name": "michellemay",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": ".eleventy.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
     "build": "npx @11ty/eleventy"

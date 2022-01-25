@@ -4,6 +4,13 @@
 
 		<a class="" href="/" title="{{ site.name }}">michelle may</a>
 
+<ul class="nav__list">
+  {% for item in nav.items %}
+  <li>
+    <a href="{{ item.url }}">{{ items.text }}</a>
+  </li>
+  {% endfor %}
+</ul>
 	</div>
 
 </header>
