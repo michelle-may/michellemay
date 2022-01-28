@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": ".eleventy.js",
+
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
+    "start": "concurrently 'npm:parcel-watch' 'npm:eleventy-serve'",
+    "eleventy-serve": "npx @11ty/eleventy --serve",
+    "parcel-watch": "parcel src/assets/css/main.css --dist-dir public/assets/css",
     "build": "npx @11ty/eleventy"
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0"
+    "@11ty/eleventy": "^1.0.0",
+    "parcel": "^2.2.1"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "the-new-css-reset": "^1.4.7"
   }
 }
