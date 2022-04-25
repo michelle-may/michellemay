@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 
   {# include main.css if in development mode #}
-  {% if helpers.environment === "development" %}
+  {% if env.env === "dev" %}
     <link rel="stylesheet" href="/assets/css/main.css">
   {% else %}
     {# else, use the minified css file for production #}

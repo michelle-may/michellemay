@@ -4,7 +4,7 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "concurrently 'npm:parcel-watch' 'npm:eleventy-serve'",
+    "start": "ELEVENTY_ENV=dev concurrently 'npm:parcel-watch' 'npm:eleventy-serve'",
     "eleventy-serve": "npx @11ty/eleventy --serve",
     "parcel-watch": "parcel src/assets/css/main.css --dist-dir public/assets/css",
     "build": "npx @11ty/eleventy"

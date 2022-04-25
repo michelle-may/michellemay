@@ -14,3 +14,5 @@ Thumbs.db
 node_modules
 public
 src/_includes/css
+
+src/_data/env.js
