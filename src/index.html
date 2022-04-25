@@ -6,5 +6,35 @@ body_class: home
 title: Michelle May | UX/UI Design and Developer | Portfolio
 ---
 
-<p>Hello rude</p>
-{{ site.name }}
+<section class="grid cols-2third">
+  <div>
+    <h2 class="h1">Hello!</h2>
+    <p class="h2">I’m Michelle, an experienced product designer and sometimes front-end developer.</p>
+    <p class="lead">I love working on complex problems with passionate people, getting nerdy with data, bringing clarity to the confusing and helping my team to find new ways to work in the open with each other. <a href="#">More about me</a></p>
+  </div>
+</section>
+
+<section>
+  <h2 class="fw-med">Case studies</h2>
+  <div class="grid cols-half">
+    {%- for work in collections.work -%}
+        <div class="case-study">
+            <a class="case-study__link" href="{{ work.url }}">
+                <img src="{{ work.data.featured_image }}" alt="{{ work.data.featured_image_alt }}">
+                <h3 class="h4">{{ work.data.cs_title}}</h3>
+                <p>{{ work.data.title }}</p>
+            </a> 
+        </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+<aside>
+  <h2>Say hey</h2>
+  <p class="lead">If you want to chat, you can reach me at michelle@michellemay.co.uk. You can also find me in the following places:</p>
+  <ul>
+    <li>LinkedIn</li>
+    <li>Twitter</li>
+    <li>Github</li>
+  </ul>
+</aside>
