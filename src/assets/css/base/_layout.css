@@ -1,0 +1,30 @@
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 74.625rem;
+  position: relative;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+}
+
+.cols-2third {
+  max-width: 786px;
+}
+
+@media (--mq-med) {
+  .wrapper {
+    padding: 0 32px;
+  }
+
+  .cols-half {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

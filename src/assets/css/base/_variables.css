@@ -1,0 +1,41 @@
+
+/* MQ Breakpoints */
+/* 320px */
+@custom-media --mq-xsmall (min-width: 20em);
+/* 480px */
+@custom-media --mq-small (min-width: 30em);
+/* 768px */
+@custom-media --mq-med (min-width: 48em);
+
+
+:root {
+  /* Colours */
+  --dark-green: #002D33;
+  --beige: #FBF7F4;
+  --rust: #D65D0E;
+  --dark-rust: #BA4F08;
+
+  /* Colour usage */
+  --bg-color: var(--beige);
+  --text-color: var(--dark-green);
+  --link-color: var(--dark-rust);
+
+  /* Type */
+  --h1: 56px;
+  --h2: 30px;
+  --h3: 28px;
+  --h4: 26px;
+  --p-lead: 20px;
+  --p: 18px;
+}
+
+@media (--mq-med) {
+  :root {
+    --h1: 72px;
+    --h2: 48px;
+    --h3: 36px;
+    --h4: 30px;
+    --p-lead: 24px;
+    --p: 20px;
+  }
+}

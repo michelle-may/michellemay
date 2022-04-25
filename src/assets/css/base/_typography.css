@@ -1,0 +1,70 @@
+h1,h2,h3,h4,h5,h6,p {
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+h1, .h1 {
+  font-size: var(--h1);
+  font-weight: 500;
+}
+
+h2, .h2 {
+  font-size: var(--h2);
+}
+
+h3, .h3 {
+  font-size: var(--h3);
+}
+
+h4, .h4 {
+  font-size: var(--h4);
+}
+
+/* h5, .h5 {
+  font-size: var(--h5);
+} */
+
+p {
+  font-size: var(--p);
+}
+
+.lead {
+  font-size: var(--p-lead);
+}
+
+/* @media (--mq-med) {
+  h1, .h1 {
+    font-size: var(--h1-lg);
+    margin-bottom: 32px;
+  }
+  
+  h2, .h2 {
+    font-size: var(--h2-lg);
+  }
+  
+  h3, .h3 {
+    font-size: var(--h3-lg);
+  }
+
+  h4, .h4 {
+    font-size: var(--h4-lg);
+  }
+
+  p {
+    font-size: var(--p-lg);
+  }
+
+  .lead {
+    font-size: var(--p-lead-lg);
+  }
+} */
+
+a {
+  color: var(--link-color);
+}
+
+.fw-med {
+  font-weight: 500;
+}
+
