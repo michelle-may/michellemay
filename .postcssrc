@@ -1,0 +1,10 @@
+{
+  "plugins": {
+    "postcss-pxtorem": {
+      "propList": ["--*", "font-size", "font", "font-size", "line-height", "letter-spacing", "margin*"] 
+    },
+    "postcss-custom-media": {
+      "importFrom": "./src/assets/css/base/_variables.css"
+    }
+  }
+}
