@@ -11,13 +11,17 @@
     document.documentElement.classList.add('js');
   </script>
 
-  <!-- {# include main.css if in development mode #}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  {# include main.css if in development mode #}
   {% if helpers.environment === "development" %}
-      <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
   {% else %}
-      {# else, use the minified css file for production #}
-      <link rel="stylesheet" href="/css/main.min.css">
-  {% endif %} -->
+    {# else, use the minified css file for production #}
+      <link rel="stylesheet" href="/assets/css/main.min.css">
+  {% endif %}
   <!-- <link rel="stylesheet" href="/css/print.css" media="print"> -->
 
   <meta name="description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ excerpt }}{% endif %}">
@@ -41,12 +45,14 @@
 <body {% if body_class %} id="{{ body_class }}"{% endif %} class="">
 
   <a class="sr-only" href="#main">Skip to content</a>
+  
+  <div class="wrapper">
+    {# include header #}
+    {% include "partials/header.njk" %}
 
-  {# include header #}
-  {% include "partials/header.njk" %}
-
-  {# include content #}
-  {{ content | safe }}
+    {# include content #}
+    {{ content | safe }}
+  </div>
 
 </body>
 </html>
