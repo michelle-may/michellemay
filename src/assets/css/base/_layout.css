@@ -15,6 +15,10 @@ section {
   gap: 30px;
 }
 
+.flex {
+  display: flex;
+}
+
 .cols-2third {
   max-width: 786px;
 }

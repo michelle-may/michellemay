@@ -3,6 +3,10 @@
       {
           "label": "About",
           "url": "/about/"
+      },
+      {
+        "label": "Notes",
+        "url": "/notes/"
       }
   ]
 }

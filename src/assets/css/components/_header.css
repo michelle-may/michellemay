@@ -1,0 +1,38 @@
+.masthead {
+  justify-content: space-between;
+  align-items: center;
+  text-transform: lowercase;
+}
+
+.masthead__logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.masthead__logo:hover {
+  text-decoration: underline;
+}
+
+.masthead__logo-mark {
+  margin-right: 12px;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+
+.main-nav__list-item a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+@media (--mq-med) {
+  .main-nav__list-item {
+    font-size: 20px;
+    margin-left: 36px;
+  }
+}

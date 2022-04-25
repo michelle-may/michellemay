@@ -1,16 +1,25 @@
-<header id="header" >
+<header class="masthead flex">
 
-	<div>
+    {% if page.url === '/' %}
+    <h1 class="masthead__logo" href="/" title="{{ site.name }}">
+      {% include "partials/logo.njk" %}
+      Michelle May
+    </h1>
+    {% else %}
+		<a class="masthead__logo" href="/" title="{{ site.name }}">
+      {% include "partials/logo.njk" %}
+      Michelle May
+    </a>
+    {% endif %}
 
-		<a class="" href="/" title="{{ site.name }}">michelle may</a>
-
-<ul class="nav__list">
-  {% for item in nav.items %}
-  <li>
-    <a href="{{ item.url }}">{{ items.text }}</a>
-  </li>
-  {% endfor %}
-</ul>
-	</div>
+    <nav class="main-nav">
+      <ul class="main-nav__list flex">
+        {% for item in nav.items %}
+        <li class="main-nav__list-item">
+          <a href="{{ item.url }}">{{ item.label }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
 
 </header>

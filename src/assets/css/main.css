@@ -7,4 +7,5 @@
 @import "base/_typography.css";
 @import "base/_layout.css";
 
+@import "components/_header.css";
 @import "components/_case-study.css";
