@@ -6,6 +6,11 @@
   position: relative;
 }
 
+.content-narrow {
+  max-width: 786px;
+  margin: 0 auto;
+}
+
 section {
   margin-bottom: 32px;
 }

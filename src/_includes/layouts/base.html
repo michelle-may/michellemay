@@ -42,7 +42,7 @@
   <meta name="theme-color" content="#FF00FF"> -->
 </head>
 
-<body {% if body_class %} id="{{ body_class }}"{% endif %} class="">
+<body class="{% if body_class %}{{ body_class }}{% endif %}">
 
   <a class="sr-only" href="#main">Skip to content</a>
   

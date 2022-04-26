@@ -8,6 +8,9 @@
 @import "base/_layout.css";
 
 @import "components/_header.css";
+@import "components/_hero.css";
 @import "components/_case-study.css";
+
+@import "pages/_about.css";
 
 @import "utilities/_utilities.css";
