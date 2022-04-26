@@ -2,3 +2,18 @@
   list-style: none;
   padding-left: 0;
 }
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: 1rem;
+  color: var(--beige);
+  background: var(--dark-rust);
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.sr-only:focus {
+  left: 1rem;
+}
