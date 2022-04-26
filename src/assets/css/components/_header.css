@@ -2,6 +2,8 @@
   justify-content: space-between;
   align-items: center;
   text-transform: lowercase;
+  padding: 8px 0;
+  margin-bottom: 80px;
 }
 
 .masthead__logo {
@@ -31,6 +33,9 @@
 }
 
 @media (--mq-med) {
+  .masthead {
+    margin-bottom: 160px;
+  }
   .main-nav__list-item {
     font-size: 20px;
     margin-left: 36px;

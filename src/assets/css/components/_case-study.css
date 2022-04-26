@@ -1,3 +1,7 @@
+.case-study:nth-child(2n) {
+  margin-top: 48px;
+}
+
 .case-study__link {
   color: var(--text-color);
   text-decoration: none;
