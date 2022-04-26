@@ -2,9 +2,10 @@ module.exports = eleventyConfig => {
 
   // Layout aliases
   eleventyConfig.addLayoutAlias('base', 'layouts/base.html')
+  eleventyConfig.addLayoutAlias('case-study', 'layouts/case-study.html')
 
   // Include our static assets
-  // eleventyConfig.addPassthroughCopy('./src/assets/images')
+  eleventyConfig.addPassthroughCopy('./src/assets/images')
 
   // Refresh browser when assets are updated via parcel
   eleventyConfig.setBrowserSyncConfig({
