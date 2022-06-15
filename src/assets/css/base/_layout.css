@@ -7,7 +7,12 @@
 }
 
 .content-narrow {
-  max-width: 786px;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.content-mid {
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -28,12 +33,25 @@ section {
   max-width: 786px;
 }
 
+
+.cols-half {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 @media (--mq-med) {
   .wrapper {
     padding: 0 32px;
   }
 
-  .cols-half {
+  .cols-half-md {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .cols-thirds-md {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+figure {
+  margin: 0;
 }

@@ -2,26 +2,16 @@
 layout: base
 ---
 
-<main id="main" class="">
-
-    <div class="hero bg-pink py-8 md:py-16">
-        <div class="wrapper wrapper--wide">
-            <div class="intro grid sm:grid-cols-2 sm:gap-8 items-center">
-                <div class="order-2 mb-2 sm:order-none md:pr-8 md:mb-0">
-                    <h1 class="cs-title text-2xl pb-6 md:text-4xl md:pb-8 md:mb-8">{{ title }}</h1>
-                    <p class="text-lg mb-2 leading-normal"><strong>Role:</strong> {{ role }}</p>
-                    <p class="text-lg mb-2 leading-normal"><strong>Contribution:</strong> {{ contribution }}</p>
-                </div>
-                <div class="image-reveal mb-6 sm:mb-0">  
-                    <div class="image-reveal__cover"></div>
-                    <img src="{{ featured_image }}" alt="{{ featured_image_alt }}" class="image-reveal__img">
-                </div>
-            </div>
-        </div>
+<header class="cs-header">
+    <h1>{{ cs_title }}</h1>
+    <p class="h4">{{ byline }}</p>
+    <div class="cs-header__info-grid">
+        <p><strong>Role</strong><br> {{ role }}</p>
+        <p><strong>Date</strong><br> {{ page.date | workDate }}</p>
+        <p><strong>Contribution</strong><br> {{ contribution }}</p>
     </div>
+</header>
 
-<div class="content md:text-xl">
+<div>
     {{ content | safe }}
 </div>
-
-</main>

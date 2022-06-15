@@ -1,15 +1,19 @@
 <header class="masthead flex">
 
     {% if page.url === '/' %}
-    <h1 class="masthead__logo" href="/" title="{{ site.name }}">
+    <h1 class="masthead__logo">
+      <a class="masthead__logo-link" href="/" title="{{ site.name }}">
       {% include "partials/logo.njk" %}
       Michelle May
+      </a>
     </h1>
     {% else %}
-		<a class="masthead__logo" href="/" title="{{ site.name }}">
-      {% include "partials/logo.njk" %}
-      Michelle May
-    </a>
+    <p class="masthead__logo">
+      <a class="masthead__logo-link" href="/" title="{{ site.name }}">
+        {% include "partials/logo.njk" %}
+        Michelle May
+      </a>
+    </span>
     {% endif %}
 
     <nav class="main-nav">

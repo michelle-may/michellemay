@@ -7,20 +7,34 @@
 }
 
 .masthead__logo {
-  display: flex;
-  align-items: center;
   margin-bottom: 0;
   font-size: 20px;
+}
+
+.masthead__logo-link {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
   font-weight: 400;
   text-decoration: none;
 }
 
-.masthead__logo:hover {
+
+.masthead__logo-link:hover {
   text-decoration: underline;
 }
 
+
 .masthead__logo-mark {
   margin-right: 12px;
+}
+.logo-bkg {
+  fill: var(--yellow);
+  transition: fill 1s cubic-bezier(0, 0, 0.06, 1.06);
+}
+
+.masthead__logo-link:hover .logo-bkg {
+  fill: var(--beige);
 }
 
 .main-nav__list {

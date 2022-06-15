@@ -1,3 +1,5 @@
+const { DateTime } = require("luxon");
+
 module.exports = eleventyConfig => {
 
   // Layout aliases
@@ -6,6 +8,11 @@ module.exports = eleventyConfig => {
 
   // Include our static assets
   eleventyConfig.addPassthroughCopy('./src/assets/images')
+
+  // Fix date output
+  eleventyConfig.addFilter("workDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('y')
+  })
 
   // Refresh browser when assets are updated via parcel
   eleventyConfig.setBrowserSyncConfig({

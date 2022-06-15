@@ -17,3 +17,11 @@
 .sr-only:focus {
   left: 1rem;
 }
+
+.rounded {
+  border-radius: 8px;
+}
+
+.shadow {
+  box-shadow: 2px 5px 20px rgb(0 0 0 / 4%)
+}

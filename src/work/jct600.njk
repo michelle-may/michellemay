@@ -1,99 +1,107 @@
 ---
 layout: case-study
 tags: work
-date: 2020-06
+date: 2020-07-01
+year: 2020
 title: JCT600
 cs_title: Taking a car dealership customer portal from proof of concept to MVP
+byline: I lead the design on JCT600's customer portal, taking it from an initial proof of concept to MVP
 featured_image: /assets/images/work/jct600-cover.png
 featured_image_alt: JCT600 customer portal onboarding screen
 role: Lead designer
 contribution: Service mapping, prototyping, UX/UI design, lab research observation and analysis, design system creation, stakeholder management
 ---
 
-<section class="cs-section my-8 sm:my-12 md:my-20">
-    <div class="wrapper wrapper--wide">
-        <div class="grid sm:grid-cols-3 sm:gap-8 items-center">
-            <div class="col-span-2"><img src="/assets/images/work/portal-map.jpg"></div>
-            <div class="col-span-2 sm:col-span-1"><h3 class="md:text-4xl text-lg">Discovery</h3><p>I kicked the piece of work off by spending a day at one of JCT600's dealerships learning how they sell a car and understanding the systems involved in this process, then visualised this as a service map.</p></div>
-        </div>
+<section class="cs-section">
+    <div class="content-narrow">
+        <h2 class="h3">The challenge</h2>
+        <p>JCT600 had an ambitious goal - to make digital their 54th dealership, helping deal finders switch cars when the time is right for them. We were tasked with exploring a solution to capture a customer's details ahead of their appointment at a dealership, to allow the salespeople to focus more on the experience of the appointment and test drive and reduce time spent on admin tasks.</p>
+        <p>Our client JCT600 had identified a lot of time was spent by their salespeople doing data entry. At the time, the sales process in a JCT600 dealership took around 3 hours from the customer entering the dealership, to building the deal. For the salespeople, there was a lot of double-keying of information into different systems which really increased the length of this process.</p>
+        <p>The business wanted to reduce the amount of time spent on admin, and get the customer into the car and on their test drive faster.</p>
+    </div>
+    <div class="content-narrow">
+        <h4>How to sell a car</h4><p>I kicked this piece of work off by spending a day at one of JCT600's dealerships, learning how they sell a car and understanding the systems involved in this process. The next step was visualising this as a service map.</p>
+    </div>
+    <figure class="content-mid cs-spacer">
+        <img src="/assets/images/work/portal-map.jpg">
+        <figcaption>A map of the process from test drive appointment to sale</figcaption>
+    </figure>
+
+</section>
+
+<section class="cs-section">
+    <div class="content-narrow">
+        <h2 class="h3">Testing a proof of concept</h2>
+        <h3 class="h5">Key challenges</h4>
+        <p>Technical limitation of one way (send only) data. At this stage, I felt we were creating something for the customer that mostly served the business and value exchange was low.</p>
+        <h3 class="h5">Approach</h4>
+        <p>I created a basic prototype of the portal to test the flow with users in the lab, with a goal of understanding how people felt about the concept and sharing data that was either personal (driving licence) or felt too early (part-exchange information) ahead of a test drive.</p>
+        
+    </div>
+    <div class="content-mid cs-spacer">
+        <figure>
+            <img src="/assets/images/work/jct-cs-poc1.png">
+            <figcaption>A simple prototype and a process document</figcaption>
+        </figure>
     </div>
 </section>
 
-<section class="cs-section my-8 sm:my-12 md:my-20">
-    <div class="wrapper wrapper--wide">
-        <div class="grid sm:grid-cols-3 sm:gap-8 items-center">
-            <div class="col-span-2 sm:col-span-1">
-                <h3 class="text-2xl md:text-4xl">Proof of concept</h3>
-                <p><strong>Key challenge</strong><br> Technical limitations (one way data), creating something for the customer that mostly serves the business</p>
-                <p><strong>Approach</strong><br> Created two basic prototypes to test the flow and gauge viability with users in the lab.</p>
-            </div>
-            <div class="col-span-2"><img src="/assets/images/work/jct-cs-poc1.png"></div>
-        </div>
-    </div>
-</section>
 
-<section class="cs-section bg-pink py:8 sm:py-12 md:py-20">
-    <div class="wrapper wrapper--wide">
-        <div class="grid sm:grid-cols-3 sm:gap-8 items-center">
-            <div><img src="/assets/images/work/jct-cs-poc2-a.png"></div>
-            <div><img src="/assets/images/work/jct-cs-poc2-b.png"></div>
-            <div><img src="/assets/images/work/jct-cs-poc2-c.png"></div>
-        </div>
-    </div>
-</section>
 
-<section class="cs-section my-8 sm:my-12 md:my-20">
-    <div class="wrapper wrapper--narrow">
-        <h3 class="text-2xl md:text-4xl">Proof of concept - iteration two</h3>
-        <p>
-            <strong>Key challenge</strong><br>
-            In testing, it was loud and clear there isn't enough value to the customer in the portal yet. Customers have a negative perception of car salespeople, coupled with hesistancy over sharing personal details digitally.
+<section class="cs-section">
+    <div class="content-narrow">
+        <h2 class="h3">Proof of concept - iteration two</h2>
+        <h3 class="h5">Key challenges</h3>
+        <p>In testing, it was loud and clear there wasn't enough value to the customer in the portal yet. Customers have a negative perception of car salespeople (<em>"they're all charlatans"</em> - a quote from a participant) and didn't want to share data with them. They also had no context for time-saving; people don't buy cars frequently enough to think that a car sales appointment takes a long time. 
         </p>
-        <p>
-            <strong>Approach</strong><br>
-            The focus of the 2nd iteration was around building in perceived value and trying to increase trustworthiness. 
+        <h3 class="h5">Approach</h3>
+        <p>The longer term value I could see in this product required two-way data. We could potentially get information of the appointment (good!) but other integrations would be a way off. In this next iteration I bought in appointment information and focused around building in perceived value and trying to increase trustworthiness.
         </p>
         <ul class="list-disc mb-8 ml-10">
-            <li>Added in onboarding to create more perceived value, working with a content designer to ensure the flow from email to task completion was clear</li>
-            <li>Push to have system integration with their stock database so we can pull in a photo of the car booked for test drive to create more excitement around the car</li>
-            <li>Added time labelling onto tasks to give customers more of a sense of time saving, and increased presence of gamification</li>
-            <li>Created an 'info panel' design pattern and ensuring at every stage we ask the customer for details, we use this panel to explain why we need the customer's details</li>
+            <li>Added in onboarding to create more perceived value, working with a content designer to ensure the flow from email to task completion was clear.</li>
+            <li>Pushed to have system integration with their stock database so we can pull in a photo of the car booked for the appointment to help set more focus and context to the portal, plus potentially create more excitement for the test drive.</li>
+            <li>Added time labelling onto tasks to give customers more of a sense of time saving, and increased presence of gamification. (<strong>2022 note:</strong> given my increased knowledge in accessibility, I wouldn't do this today. Time taken/saved is not the same for everyone and we shouldn't assume someone's circumstances.)</li>
+            <li>Created an 'info panel' design pattern and ensuring at every stage we ask the customer for details, we use this panel to explain why we need the customer's details.</li>
         </ul>
-        <p>The focus of the 2nd iteration was around building in perceived value and trying to increase trustworthiness.</p>
+    </div>
+    <div class="grid cols-thirds-md cs-spacer">
+        <div><img src="/assets/images/work/jct-cs-poc2-a.png"></div>
+        <div><img src="/assets/images/work/jct-cs-poc2-b.png"></div>
+        <div><img src="/assets/images/work/jct-cs-poc2-c.png"></div>
     </div>
 </section>
 
-<section class="cs-section bg-pink py:8 sm:py-12 md:py-20">
-    <div class="wrapper wrapper--wide">
-        <div class="grid sm:grid-cols-3 sm:gap-8 items-center">
-            <div><img src="/assets/images/work/jct600-motion.gif" class="w-full"></div>
-            <div><img src="/assets/images/work/jct-cs-mvp-1.png"></div>
-            <div><img src="/assets/images/work/jct-cs-mvp-2.png"></div>
-        </div>
-    </div>
-</section>
-
-<section class="cs-section my-8 sm:my-12 md:my-20">
-    <div class="wrapper wrapper--narrow">
-        <h3 class="text-2xl md:text-4xl">MVP</h3>
+<section class="cs-section">
+    <div class="content-narrow">
+        <h3>MVP</h3>
         <p>
             <strong>Key challenge</strong><br>
-            Customer value is still low - how do we improve this without adding new features?
+            Customer value is still low - how might we improve product perception without adding new features?
         </p>
         <p>
             <strong>Approach</strong><br>
             Push to make filling out the portal a more pleasurable experience. 
         </p>
         <ul class="list-disc mb-8 ml-10">
-            <li>Worked with Art Director to help inform new visual direction for JCT600 and create a wider (and accessible) colour palette to work from, and allow us to bring in slicker design elements and illustrations</li>
-            <li>Redesigned all elements and put the foundations of a design system in place to allow for easier iteration and growth in the future</li>
-            <li>Started designing animations and micro-interactions both to create a more enjoyable experience, but also to to provide reassurance in tasks that involve submitting user information</li>
+            <li>JCT600 didn't have a strong brand or much in the way of visual design to utilise and the few colours in their palette were all inaccessible. I recommended some art direction work happened. It was important that this portal looked slick and trustworthy, the modern arm of a modern car sales business. This unlocked a further piece of work with the client. I worked with our Art Director to help inform the new visual direction for JCT600 and create a wider (and more accessible) colour palette to work from and allow us to bring in cohesive design elements and illustrations.</li>
+            <li>Redesigned all elements and put the foundations of a design system in place, creating reusable components and rationalising colour usage to allow for easier iteration and growth in the future.</li>
+            <li>Started designing animations and micro-interactions both to create a more enjoyable experience, but also to to provide reassurance in tasks that involve submitting user information.</li>
         </ul>
+    </div>
+    <div class="grid cols-thirds-md">
+        <div><img src="/assets/images/work/jct600-motion.gif" class="rounded shadow"></div>
+        <div><img src="/assets/images/work/jct-cs-mvp-1.png" class="rounded shadow"></div>
+        <div><img src="/assets/images/work/jct-cs-mvp-2.png" class="rounded shadow"></div>
     </div>
 </section>
 
+<section class="cs-section">
+    <h2 class="h3">Results?</h2>
+    <p>I fed into how we should capture both client and customer feedback, suggesting we pilot at a small number of showrooms first to gather insight. However, I left the company before I could see the product in the wild and understand the results. The product is being used in showrooms and continued to be iterated on and from what I understand, came into it’s own during covid in helping to provide a safe car-buying experience.</p>
+</section>
+
 <aside class="bg-pink m-auto max-w-2xl md:p-10 mb-20">
-    <h2 class="md:text-3xl">Reflections</h2>
+    <h2 class="h3">Reflections</h2>
     <h4 class="font-bold md:text-lg">Something cool</h4>
     <p>Exploring micro-interactions and working with deeply ingrained negative perceptions</p>
 

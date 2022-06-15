@@ -11,13 +11,16 @@
 :root {
   /* Colours */
   --dark-green: #002D33;
+  --grey: #6a6e6f;
   --beige: #FBF7F4;
   --rust: #D65D0E;
   --dark-rust: #BA4F08;
+  --yellow: #FD9F1F;
 
   /* Colour usage */
   --bg-color: var(--beige);
   --text-color: var(--dark-green);
+  --text-color-light: var(--grey);
   --link-color: var(--dark-rust);
 
   /* Type */
