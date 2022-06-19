@@ -8,9 +8,9 @@ title: Michelle May | UX/UI Design and Developer | Portfolio
 
 <section class="grid cols-2third hero">
   <div>
-    <h2 class="h1">Hello!</h2>
-    <p class="h2">I'm Michelle, an experienced product designer and sometimes front-end developer.</p>
-    <p class="lead">I love working on complex problems with passionate people, getting nerdy with data, bringing clarity to the confusing and helping my team to find new ways to work in the open with each other. <a href="#">More about me</a></p>
+    <h2 class="mega js-fade">Hello!</h2>
+    <p class="h1 js-fade">I'm Michelle, an experienced product designer and sometimes front-end developer.</p>
+    <p class="lead js-fade">I love working on complex problems with passionate people, getting nerdy with data, bringing clarity to the confusing and helping my team to find new ways to work in the open with each other. <a href="#">More about me</a></p>
   </div>
 </section>
 
@@ -20,8 +20,8 @@ title: Michelle May | UX/UI Design and Developer | Portfolio
     {%- for work in collections.work | reverse -%}
         <div class="cs-block">
             <a class="cs-block__link" href="{{ work.url }}">
-                <img src="{{ work.data.featured_image }}" alt="{{ work.data.featured_image_alt }}">
-                <h3 class="h4">{{ work.data.cs_title}}</h3>
+                <img src="{{ work.data.featured_image }}" class="cs-block__img" alt="{{ work.data.featured_image_alt }}">
+                <h3 class="cs-block__header">{{ work.data.cs_title}}</h3>
                 <p>{{ work.data.title }}</p>
             </a> 
         </div>

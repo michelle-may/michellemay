@@ -12,12 +12,12 @@ h4,.h4,h5,.h5 {
   margin-bottom: 20px;
 }
 
-p {
-  margin-bottom: 24px;
-}
-
 h1, .h1 {
   font-size: var(--h1);
+}
+
+.mega {
+  font-size: var(--mega);
   font-weight: 500;
 }
 
@@ -31,16 +31,21 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: var(--h4);
+  font-weight: 500;
 }
 
 h5, .h5 {
   font-size: var(--p);
-  font-weight: bold;
 }
 
 p, ul, ol {
   font-size: var(--p);
   line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+p + ul {
+  margin-top: -12px;
 }
 
 ul,ol {
@@ -48,7 +53,7 @@ ul,ol {
 }
 
 li {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .lead {

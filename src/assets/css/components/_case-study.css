@@ -3,42 +3,15 @@
 }
 
 .cs-block__link {
+  display: block;
   color: var(--text-color);
   text-decoration: none;
 }
 
-
-/* Case study pages */
-
-.cs-header__info-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+.cs-block__header {
+  margin-bottom: 16px;
 }
 
-.cs-header__info-grid p:first-child { grid-area: 1 / 1 / 2 / 2; }
-.cs-header__info-grid p:nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
-.cs-header__info-grid p:last-child { grid-area: 1 / 3 / 2 / 6; }
-
-.cs-section {
-  margin: 32px 0;
+.cs-block__img {
+  margin-bottom: 16px;
 }
-
-.cs-spacer {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-@media (--mq-med) {
-  .cs-section {
-    margin: 80px 0;
-  }
-
-  .cs-spacer {
-    margin-top: 52px;
-    margin-bottom: 52px;
-  }
-}
-
