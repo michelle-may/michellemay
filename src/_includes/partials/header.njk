@@ -4,26 +4,31 @@
     <h1 class="masthead__logo">
       <a class="masthead__logo-link" href="/" title="{{ site.name }}">
       {% include "partials/logo.njk" %}
-      Michelle May
+      <span class="masthead__logo-text">Michelle May</a>
       </a>
     </h1>
     {% else %}
     <p class="masthead__logo">
       <a class="masthead__logo-link" href="/" title="{{ site.name }}">
         {% include "partials/logo.njk" %}
-        Michelle May
+        <span class="masthead__logo-text">Michelle May</a>
       </a>
     </span>
     {% endif %}
 
-    <nav class="main-nav">
-      <ul class="main-nav__list flex">
-        {% for item in nav.items %}
-        <li class="main-nav__list-item">
-          <a href="{{ item.url }}">{{ item.label }}</a>
-        </li>
-        {% endfor %}
-      </ul>
+    <button class="nav-toggle" aria-label="Open menu" aria-haspopup="true" aria-expanded="false" tabindex="0" data-nav-toggle>☰</button>
+
+    <nav class="main-nav">  
+      <div class="main-nav__inner">
+        <button class="main-nav__close" data-nav-close>× close</button>
+        <ul class="main-nav__list flex">
+          {% for item in nav.items %}
+          <li class="main-nav__list-item">
+            <a href="{{ item.url }}">{{ item.label }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
     </nav>
 
 </header>

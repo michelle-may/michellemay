@@ -1,3 +1,9 @@
 .hero {
-  padding-bottom: 160px;
+  padding-bottom: 32px;
+}
+
+@media (--mq-med) {
+  .hero {
+    padding-bottom: 160px;
+  }
 }

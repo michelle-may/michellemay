@@ -6,11 +6,13 @@
 @import "base/_global.css";
 @import "base/_typography.css";
 @import "base/_layout.css";
+@import "base/_buttons.css";
 
 @import "components/_header.css";
 @import "components/_hero.css";
 @import "components/_case-study.css";
 
 @import "pages/_about.css";
+@import "pages/_case-study.css";
 
 @import "utilities/_utilities.css";

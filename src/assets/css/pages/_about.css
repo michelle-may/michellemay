@@ -1,6 +1,20 @@
+.home {
+  background-image: url("../../images/homeshape.png");
+  background-position: 62% 0%;
+  background-repeat: no-repeat;
+  background-size: 160%;
+}
+
+@media (--mq-small) {
+  .home, 
+  .about {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+}
+
+
 .about {
   background-image: url("../../images/shapebkg.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top right;
 }

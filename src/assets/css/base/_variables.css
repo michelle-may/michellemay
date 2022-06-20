@@ -1,7 +1,7 @@
 
 /* MQ Breakpoints */
 /* 320px */
-@custom-media --mq-xsmall (min-width: 20em);
+@custom-media --mq-xsmall (max-width: 30em);
 /* 480px */
 @custom-media --mq-small (min-width: 30em);
 /* 768px */
@@ -15,6 +15,7 @@
   --beige: #FBF7F4;
   --rust: #D65D0E;
   --dark-rust: #BA4F08;
+  --peach: #E49D84;
   --yellow: #FD9F1F;
 
   /* Colour usage */
@@ -24,20 +25,22 @@
   --link-color: var(--dark-rust);
 
   /* Type */
-  --h1: 56px;
-  --h2: 30px;
-  --h3: 28px;
-  --h4: 26px;
+  --mega: 56px;
+  --h1: 30px;
+  --h2: 28px;
+  --h3: 26px;
+  --h4: 20px;
   --p-lead: 20px;
   --p: 18px;
 }
 
 @media (--mq-med) {
   :root {
-    --h1: 72px;
-    --h2: 48px;
-    --h3: 36px;
-    --h4: 30px;
+    --mega: 72px;
+    --h1: 48px;
+    --h2: 36px;
+    --h3: 30px;
+    --h4: 24px;
     --p-lead: 24px;
     --p: 20px;
   }

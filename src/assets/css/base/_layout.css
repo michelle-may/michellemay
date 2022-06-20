@@ -22,7 +22,7 @@ section {
 
 .grid {
   display: grid;
-  gap: 30px;
+  gap: 16px;
 }
 
 .flex {
@@ -41,6 +41,10 @@ section {
 @media (--mq-med) {
   .wrapper {
     padding: 0 32px;
+  }
+
+  .grid {
+    gap: 30px;
   }
 
   .cols-half-md {
