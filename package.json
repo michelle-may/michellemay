@@ -4,9 +4,10 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "ELEVENTY_ENV=dev concurrently 'npm:eleventy-serve' 'npm:parcel-watch'",
+    "start": "ELEVENTY_ENV=dev concurrently 'npm:eleventy-serve' 'npm:parcel-watchcss' 'npm:parcel-watchjs'",
     "eleventy-serve": "npx @11ty/eleventy --serve",
-    "parcel-watch": "parcel src/assets/css/main.css --dist-dir public/assets/css",
+    "parcel-watchcss": "parcel src/assets/css/main.css --dist-dir public/assets/css",
+    "parcel-watchjs": "parcel src/assets/js/scripts.js --dist-dir public/assets/js",
     "build": "npx @11ty/eleventy"
   },
   "keywords": [],
@@ -15,13 +16,13 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "autoprefixer": "^10.4.7",
-    "parcel": "^2.6.0",
+    "parcel": "^2.6.1",
     "postcss": "^8.4.14",
     "postcss-custom-media": "^8.0.2",
     "postcss-pxtorem": "^6.0.0"
   },
   "dependencies": {
-    "concurrently": "^7.2.1",
+    "concurrently": "^7.2.2",
     "the-new-css-reset": "^1.6.1"
   }
 }
