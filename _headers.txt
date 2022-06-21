@@ -1,0 +1,4 @@
+# a path:
+/work/coopfnc/index.html
+  # headers for that path:
+  Basic-Auth: USERNAME:mchll22 SECOND_USERNAME:mchll22

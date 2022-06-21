@@ -7,7 +7,8 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('case-study', 'layouts/case-study.html')
 
   // Include our static assets
-  eleventyConfig.addPassthroughCopy('./src/assets/images')
+  //eleventyConfig.addPassthroughCopy('./src/assets/images')
+  eleventyConfig.addPassthroughCopy("_headers.txt");
 
   // Fix date output
   eleventyConfig.addFilter("workDate", (dateObj) => {
