@@ -3,12 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": ".eleventy.js",
+  "targets": {
+    "main": false
+  },
   "scripts": {
-    "start": "ELEVENTY_ENV=dev concurrently 'npm:eleventy-serve' 'npm:parcel-watchcss' 'npm:parcel-watchjs'",
+    "start": "ELEVENTY_ENV=dev concurrently 'npm:eleventy-serve' 'parcel-watch'",
     "eleventy-serve": "npx @11ty/eleventy --serve",
-    "parcel-watchcss": "parcel src/assets/css/main.css --dist-dir public/assets/css",
-    "parcel-watchjs": "parcel src/assets/js/scripts.js --dist-dir public/assets/js",
-    "build": "npx @11ty/eleventy"
+    "parcel-watch": "concurrently 'npm-watch-css' 'npm-watch-js' 'npm-watch-images'",
+    "watch-css": "parcel src/assets/css/main.css --dist-dir public/assets/css",
+    "watch-js": "parcel src/assets/js/scripts.js --dist-dir public/assets/js",
+    "watch-images": "parcel src/assets/images/* --dist-dir public/assets/images",
+    "eleventy-build": "npx @11ty/eleventy",
+    "parcel-build": "run-s build-css build-js build-images",
+    "build": "run-s clean parcel-build eleventy-build",
+    "build-css": "parcel build src/assets/css/main.css --dist-dir public/assets/css",
+    "build-js": "parcel build src/assets/js/scripts.js --dist-dir public/assets/js",
+    "build-images": "parcel build src/assets/images/* --dist-dir public/assets/images",
+    "clean": "rm -rf public"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +27,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
     "autoprefixer": "^10.4.7",
+    "npm-run-all": "^4.1.5",
     "parcel": "^2.6.1",
     "postcss": "^8.4.14",
     "postcss-custom-media": "^8.0.2",
