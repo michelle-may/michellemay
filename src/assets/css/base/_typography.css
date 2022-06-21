@@ -38,7 +38,7 @@ h5, .h5 {
   font-size: var(--p);
 }
 
-p, ul, ol {
+p, ul, ol, dl {
   font-size: var(--p);
   line-height: 1.55;
   margin-bottom: 24px;
@@ -54,6 +54,10 @@ ul,ol {
 
 li {
   margin-bottom: 8px;
+}
+
+dd {
+  margin: 0;
 }
 
 .lead {

@@ -18,6 +18,10 @@
   left: 1rem;
 }
 
+.margin-none {
+  margin-bottom: 0;
+}
+
 .rounded {
   border-radius: 8px;
 }

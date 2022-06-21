@@ -18,3 +18,27 @@
 .about {
   background-image: url("../../images/shapebkg.png");
 }
+
+.about-photo {
+  border-radius: 50%;
+}
+
+.cv-list {
+  gap: 0;
+}
+
+.cv-list dd,
+.cv-list dt {
+  border-bottom: 1px solid var(--peach);
+  padding: 32px 0;
+}
+
+/* .cv-list dd:first-of-type,
+.cv-list dt:first-of-type {
+  padding-top: 0;
+} */
+
+.cv-list dd:last-of-type,
+.cv-list dt:last-of-type {
+  border-bottom: none;
+}
