@@ -8,7 +8,7 @@ module.exports = eleventyConfig => {
 
   // Include our static assets
   //eleventyConfig.addPassthroughCopy('./src/assets/images')
-  eleventyConfig.addPassthroughCopy("_headers.txt");
+  eleventyConfig.addPassthroughCopy("_headers");
 
   // Fix date output
   eleventyConfig.addFilter("workDate", (dateObj) => {
