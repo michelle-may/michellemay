@@ -15,13 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 
-  {# include main.css if in development mode #}
-  {% if env.env === "dev" %}
-    <link rel="stylesheet" href="/assets/css/main.css">
-  {% else %}
-    {# else, use the minified css file for production #}
-      <link rel="stylesheet" href="/assets/css/main.min.css">
-  {% endif %}
+  <link rel="stylesheet" href="/assets/css/main.css">
   <!-- <link rel="stylesheet" href="/css/print.css" media="print"> -->
 
   <meta name="description" content="{% if meta_description %}{{ meta_description }}{% else %}{{ excerpt }}{% endif %}">
@@ -46,14 +40,15 @@
 
   <a class="sr-only" href="#main">Skip to content</a>
   
-  <div class="wrapper">
+  <main class="page wrapper">
     {# include header #}
     {% include "partials/header.njk" %}
 
     {# include content #}
     {{ content | safe }}
-  </div>
+  </main>
 
+  {% include "partials/footer.njk" %}
 
   <script src="/assets/js/scripts.js"></script>
 </body>

@@ -1,6 +1,11 @@
+.page {
+  margin-bottom: 64px;
+}
+
 .wrapper {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 20px;
   max-width: 74.625rem;
   position: relative;
@@ -31,6 +36,10 @@ section {
 
 .cols-2third {
   max-width: 786px;
+}
+
+.cols-span-2 {
+  grid-column: span 2 / span 2;
 }
 
 
