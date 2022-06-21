@@ -1,7 +1,19 @@
 .cs-block__link {
   display: block;
+  background-color: var(--bg-color);
   color: var(--text-color);
   text-decoration: none;
+  transform: translateY(0);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.cs-block__link:hover {
+  transform: translateY(-5px);
+  /* box-shadow: 0px 12px 38px 0px rgba(0,0,0,0.05); */
+}
+
+.cs-block__link:hover .cs-block__header {
+  text-decoration: underline;
 }
 
 .cs-block__header {
