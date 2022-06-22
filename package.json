@@ -7,12 +7,12 @@
     "main": false
   },
   "scripts": {
-    "start": "ELEVENTY_ENV=dev concurrently 'npm:eleventy-serve' 'parcel-watch'",
+    "start": "ELEVENTY_ENV=dev concurrently 'npm:eleventy-serve' 'npm:parcel-watch'",
     "eleventy-serve": "npx @11ty/eleventy --serve",
-    "parcel-watch": "concurrently 'npm-watch-css' 'npm-watch-js' 'npm-watch-images'",
-    "watch-css": "parcel src/assets/css/main.css --dist-dir public/assets/css",
-    "watch-js": "parcel src/assets/js/scripts.js --dist-dir public/assets/js",
-    "watch-images": "parcel src/assets/images/* --dist-dir public/assets/images",
+    "parcel-watch": "concurrently 'npm:watch-css' 'npm:watch-js' 'npm:watch-images'",
+    "watch-css": "parcel watch src/assets/css/main.css --dist-dir public/assets/css",
+    "watch-js": "parcel watch src/assets/js/scripts.js --dist-dir public/assets/js",
+    "watch-images": "parcel watch src/assets/images/* --dist-dir public/assets/images",
     "eleventy-build": "npx @11ty/eleventy",
     "parcel-build": "run-s build-css build-js build-images",
     "build": "run-s clean parcel-build eleventy-build",
