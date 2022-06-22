@@ -15,3 +15,11 @@ layout: base
 <div>
     {{ content | safe }}
 </div>
+
+<nav class="cs-nav">
+    {% set previousCase = collections.work | getPreviousCollectionItem(page) %}
+    {% set nextCase = collections.work | getNextCollectionItem(page) %}
+    {% if previousCase %}
+        <h4 class="margin-none">Read next</h4>
+        <p><a href="{{ previousCase.url }}">{{ previousCase.data.title }} »</a></p>{% endif %}
+</nav>
