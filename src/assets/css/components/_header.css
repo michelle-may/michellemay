@@ -107,13 +107,14 @@
 @media (--mq-xsmall) {
   .main-nav {
     position: fixed;
-    z-index: 999;
+    z-index: 2;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     background-color: transparent;
     visibility: hidden;
+    transition: all .3s;
   }
 
   .main-nav__list {
