@@ -40,10 +40,10 @@
 
   <a class="sr-only" href="#main">Skip to content</a>
   
-  <main class="page wrapper">
-    {# include header #}
-    {% include "partials/header.njk" %}
+  {# include header #}
+  {% include "partials/header.njk" %}
 
+  <main class="page wrapper">
     {# include content #}
     {{ content | safe }}
   </main>
