@@ -5,10 +5,14 @@ module.exports = eleventyConfig => {
   // Layout aliases
   eleventyConfig.addLayoutAlias('base', 'layouts/base.html')
   eleventyConfig.addLayoutAlias('case-study', 'layouts/case-study.html')
+  eleventyConfig.addLayoutAlias('post', 'layouts/post.html')
 
   // Include our static assets
   //eleventyConfig.addPassthroughCopy('./src/assets/images')
   eleventyConfig.addPassthroughCopy("_headers");
+  eleventyConfig.addPassthroughCopy("./src/favicon.svg");
+  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+  eleventyConfig.addPassthroughCopy("./src/apple-touch-icon.png");
 
   // Fix date output
   eleventyConfig.addFilter("workDate", (dateObj) => {
