@@ -16,7 +16,7 @@ layout: base
     {{ content | safe }}
 </div>
 
-<nav class="cs-nav">
+<nav class="cs-nav content-narrow">
     {% set previousCase = collections.work | getPreviousCollectionItem(page) %}
     {% set nextCase = collections.work | getNextCollectionItem(page) %}
     {% if previousCase %}
