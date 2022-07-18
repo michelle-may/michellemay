@@ -29,3 +29,8 @@
 .shadow {
   box-shadow: 2px 5px 20px rgb(0 0 0 / 4%)
 }
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity:  1; }
+}
