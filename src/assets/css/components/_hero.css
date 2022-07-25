@@ -1,5 +1,6 @@
 .hero {
   padding-bottom: 32px;
+  max-width: 800px;
 }
 
 @media (--mq-med) {
