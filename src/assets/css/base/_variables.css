@@ -10,8 +10,8 @@
 
 :root {
   /* Colours */
-  --dark-green: #002D33;
-  --grey: #6a6e6f;
+  --dark-green: #1F231A;
+  --grey: #5F5F5F;
   --beige: #FBF7F4;
   --rust: #D65D0E;
   --dark-rust: #BA4F08;
@@ -25,7 +25,6 @@
   --link-color: var(--dark-rust);
 
   /* Type */
-  --mega: 56px;
   --h1: 30px;
   --h2: 28px;
   --h3: 26px;
@@ -36,12 +35,11 @@
 
 @media (--mq-med) {
   :root {
-    --mega: 72px;
     --h1: 48px;
     --h2: 36px;
     --h3: 30px;
-    --h4: 24px;
-    --p-lead: 24px;
-    --p: 20px;
+    --h4: 20px;
+    --p-lead: 20px;
+    --p: 18px;
   }
 }

@@ -1,10 +1,9 @@
 .hero {
   padding-bottom: 32px;
-  max-width: 800px;
 }
 
 @media (--mq-med) {
   .hero {
-    padding-bottom: 160px;
+    padding-bottom: 112px;
   }
 }

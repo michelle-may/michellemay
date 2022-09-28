@@ -18,8 +18,29 @@
   left: 1rem;
 }
 
-.margin-none {
+.mw {
+  max-width: 682px;
+}
+
+.mb-none {
   margin-bottom: 0;
+}
+
+.m-none {
+  margin: 0;
+}
+
+.brow {
+  text-transform: uppercase;
+  color: var(--dark-rust);
+}
+
+.fm {
+  font-weight: 500;
+}
+
+.grey {
+  color: var(--grey);
 }
 
 .rounded {
