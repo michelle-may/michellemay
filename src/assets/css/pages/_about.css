@@ -1,6 +1,6 @@
 .home, .about {
   background-image: url("../../images/shape.png");
-  background-position: right;
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -8,11 +8,6 @@
 @media (--mq-small) {
   .home {
     background-size: 50%;
-  }
-
-  .home, .about {
-    background-repeat: no-repeat;
-    background-position: top right;
   }
 }
 

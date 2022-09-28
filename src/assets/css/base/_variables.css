@@ -6,6 +6,8 @@
 @custom-media --mq-small (min-width: 30em);
 /* 768px */
 @custom-media --mq-med (min-width: 48em);
+/* 1024px */
+@custom-media --mq-lg (min-width: 64em);
 
 
 :root {
@@ -25,7 +27,7 @@
   --link-color: var(--dark-rust);
 
   /* Type */
-  --h1: 30px;
+  --h1: 32px;
   --h2: 28px;
   --h3: 26px;
   --h4: 20px;

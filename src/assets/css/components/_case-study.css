@@ -11,12 +11,10 @@
 
 .cs-block {
   align-items: center;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-}
-
-.cs-block:nth-child(even) .cs-block__img-wrap {
-  order: 2;
+  margin-bottom: 24px;
+  position: relative;
+  /* transform: translateX(0);
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; */
 }
 
 /* .cs-block:nth-child(odd):hover {
@@ -39,8 +37,8 @@
 }
 
 .cs-block__link::before {
-  bottom: 0;
   content: "";
+  bottom: 0;
   left: 0;
   overflow: hidden;
   position: absolute;
@@ -60,11 +58,18 @@
 .cs-block__header {
   margin-bottom: 16px;
 }
-
 @media (--mq-med) {
   .cs-block {
     margin-bottom: 48px;
   }
+
+  .cs-block:nth-child(even) .cs-block__img-wrap {
+    order: 2;
+  }
+  
+}
+
+@media (--mq-lg) {
 
   .cs-block:nth-child(odd) {
     margin-left: -32px;

@@ -23,12 +23,13 @@ body_class: work
         {{ content | safe }}
     </div>
 
-    <nav class="csp-nav content-narrow">
-        {% set previousCase = collections.work | getPreviousCollectionItem(page) %}
-        {% set nextCase = collections.work | getNextCollectionItem(page) %}
-        {% if previousCase %}
-            <h4 class="mb-none">Read next</h4>
-            <p><a href="{{ previousCase.url }}">{{ previousCase.data.title }} »</a></p>{% endif %}
-    </nav>
-
+    <div class="wrapper">
+        <nav class="csp-nav content-narrow">
+            {% set previousCase = collections.work | getPreviousCollectionItem(page) %}
+            {% set nextCase = collections.work | getNextCollectionItem(page) %}
+            {% if previousCase %}
+                <h4 class="mb-none">Read next</h4>
+                <p><a href="{{ previousCase.url }}">{{ previousCase.data.title }} »</a></p>{% endif %}
+        </nav>
+    </div>
 </main>

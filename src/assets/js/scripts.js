@@ -37,7 +37,7 @@ scrollLinks.forEach(link => {
 })
 
 const animatedTags = document.querySelectorAll(".js-fade")
-console.log(animatedTags)
+// console.log(animatedTags)
 
 // fade out on load
 animatedTags.forEach(tag => {
