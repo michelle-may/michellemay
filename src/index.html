@@ -8,32 +8,41 @@ title: Michelle May | UX/UI Design and Developer | Portfolio
 
 <section class="grid hero">
   <div class="js-fade">
-    <h2 class="mega ">Hello!</h2>
-    <p class="h1">I'm Michelle; a driven, pragmatic, outcome-focused product designer and accessibility advocate.</p>
-    <p class="lead">I love working on complex problems with passionate people, getting nerdy with data, bringing clarity to the confusing and helping my team to find new ways to work in the open with each other. <a href="/about">More about me</a></p>
+    <p class="h1">Michelle is a pragmatic, good-humoured, outcome-focused product designer and accessibility advocate.</p>
+    <div class="mw">
+      <p class="lead"><strong>Currently</strong><br>Lead designer at <a href="https://digitalblog.coop.co.uk/">Co-op</a>, helping the Funeralcare business become more data-informed and user-centred. I also train colleagues on how to test for common accessibility issues.</p>
+      
+      <p class="lead"><strong>Previously</strong><br>Lead designer at <a href="https://www.codecomputerlove.com">Code Computerlove</a>, helping all size of business understand their audience and deliver value fast for them.</p>
+   
+    </div>
   </div>
 </section>
 
 <section>
   <h2>Case studies</h2>
-  <div class="grid cols-half-md">
+  <div class="cs">
     {%- for work in collections.work | reverse -%}
-        <div class="cs-block js-fade">
+        <div class="grid cols-half-md cs-block js-fade">
+          <div class="cs-block__img-wrap">
+            <img src="{{ work.data.cs_thumb }}" class="cs-block__img" alt="{{ work.data.cs_thumb_alt }}">
+          </div>
+          <div class="cs-block__text">
+            <!-- <p>{{ work.data.title }}</p> -->
             <a class="cs-block__link" href="{{ work.url }}">
-                <img src="{{ work.data.featured_image }}" class="cs-block__img" alt="{{ work.data.featured_image_alt }}">
-                <h3 class="cs-block__header">
-                  {% if work.data.locked == "yes" %}
-                    <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: text-top;" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><title>Password protected</title></title><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="140" r="20" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><line x1="128" y1="160" x2="128" y2="184" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><rect x="40" y="88" width="176" height="128" rx="8" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect><path d="M92,88V52a36,36,0,0,1,72,0V88" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-                  {% endif %}
-                  {{ work.data.cs_title}}</h3>
-                <p>{{ work.data.title }}</p>
+              <h3 class="cs-block__header">
+                {% if work.data.locked == "yes" %}
+                  <svg xmlns="http://www.w3.org/2000/svg" style="vertical-align: text-top;" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><title>Password protected</title></title><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="140" r="20" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><line x1="128" y1="160" x2="128" y2="184" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><rect x="40" y="88" width="176" height="128" rx="8" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect><path d="M92,88V52a36,36,0,0,1,72,0V88" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                {% endif %}
+                {{ work.data.cs_title}}</h3>
             </a> 
+            <p class="grey fm">{{ work.data.byline }}</p>
+          </div>
         </div>
     {%- endfor -%}
   </div>
 </section>
 
-<aside class="cols-2third cs-spacer">
+<aside class="mw cs-spacer">
   <h2>Let's talk</h2>
   <p class="lead">If you want to chat, you can reach me via <a href="mailto:michelle@michellemay.co.uk">email</a>. You can also find me in the following places:</p>
   <ul class="list-none flex links">

@@ -1,32 +1,85 @@
-.cs-block__link {
-  display: block;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  text-decoration: none;
-  transform: translateY(0);
+.work {
+  background-image: url("../../images/cs-shape.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.cs-head-wrap {
+  background-color: rgba(251, 235, 221, 0.5);
+}
+
+.cs-block {
+  align-items: center;
+  transform: translateX(0);
   transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
-.cs-block__link:hover {
-  transform: translateY(-5px);
-  /* box-shadow: 0px 12px 38px 0px rgba(0,0,0,0.05); */
+.cs-block:nth-child(even) .cs-block__img-wrap {
+  order: 2;
 }
 
-.cs-block__link:hover .cs-block__header,
-.cs-block__link:focus .cs-block__header {
+/* .cs-block:nth-child(odd):hover {
+  transform: translateX(-5px);
+}
+
+.cs-block:nth-child(even):hover {
+  transform: translateX(5px);
+} */
+
+.cs-block__link {
+  display: inline;
+  color: var(--text-color);
+  text-decoration: none;
+  /* background-image: linear-gradient(rgba(186, 79, 8, 1), rgba(186, 79, 8, 1));
+  background-size: 0% 2px;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size .3s; */
+}
+
+.cs-block__link::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.cs-block__link:hover,
+.cs-block__link:focus {
   text-decoration: underline;
+  text-decoration-color: var(--dark-rust);
+  /* background-size: 100% 2px; */
 }
 
 .cs-block__header {
   margin-bottom: 16px;
 }
 
-.cs-block__img {
-  margin-bottom: 16px;
-}
-
 @media (--mq-med) {
-  .cs-block:nth-child(2n) {
-    margin-top: 48px;
+  .cs-block {
+    margin-bottom: 48px;
   }
+
+  .cs-block:nth-child(odd) {
+    margin-left: -32px;
+  }
+
+  .cs-block:nth-child(odd) .cs-block__text {
+    margin-left: 48px;
+  }
+  
+  .cs-block:nth-child(even) {
+    margin-right: -32px;
+  }
+
+  .cs-block:nth-child(even) .cs-block__text {
+    margin-right: 48px;
+  }
+
 }

@@ -1,14 +1,16 @@
-.home {
-  background-image: url("../../images/homeshape.png");
-  background-position: 62% 0%;
+.home, .about {
+  background-image: url("../../images/shape.png");
+  background-position: right;
   background-repeat: no-repeat;
-  background-size: 160%;
+  background-size: 100%;
 }
 
 @media (--mq-small) {
-  .home, 
-  .about {
-    background-size: contain;
+  .home {
+    background-size: 50%;
+  }
+
+  .home, .about {
     background-repeat: no-repeat;
     background-position: top right;
   }

@@ -1,25 +1,34 @@
 ---
-layout: base
+layout: base-cs
+body_class: work
 ---
 
-<header class="cs-header js-fade">
-    <h1 class="mega">{{ cs_title }}</h1>
-    <p class="h3 cs-header__byline">{{ byline }}</p>
-    <div class="cs-header__info-grid">
-        <p><strong>Role</strong><br> {{ role }}</p>
-        <p><strong>Date</strong><br> {{ page.date | workDate }}</p>
-        <p><strong>Contribution</strong><br> {{ contribution }}</p>
+<header class="csp-header js-fade">
+    <div class="wrapper">
+        <h1>{{ cs_title }}</h1>
+        <p class="mw lead grey">{{ byline }}</p>
+        <!-- <div class="cs-header__info-grid">
+            <p><strong>Role</strong><br> {{ role }}</p>
+            <p><strong>Date</strong><br> {{ page.date | workDate }}</p>
+            <p><strong>Contribution</strong><br> {{ contribution }}</p>
+        </div> -->
+        <img src="{{ featured_image }}" class="csp-header__img" alt="{{ featured_image_alt }}">
     </div>
 </header>
+</div> <!-- end case study header wrap -->
 
-<div>
-    {{ content | safe }}
-</div>
+<main class="page">
 
-<nav class="cs-nav content-narrow">
-    {% set previousCase = collections.work | getPreviousCollectionItem(page) %}
-    {% set nextCase = collections.work | getNextCollectionItem(page) %}
-    {% if previousCase %}
-        <h4 class="margin-none">Read next</h4>
-        <p><a href="{{ previousCase.url }}">{{ previousCase.data.title }} »</a></p>{% endif %}
-</nav>
+    <div>
+        {{ content | safe }}
+    </div>
+
+    <nav class="csp-nav content-narrow">
+        {% set previousCase = collections.work | getPreviousCollectionItem(page) %}
+        {% set nextCase = collections.work | getNextCollectionItem(page) %}
+        {% if previousCase %}
+            <h4 class="mb-none">Read next</h4>
+            <p><a href="{{ previousCase.url }}">{{ previousCase.data.title }} »</a></p>{% endif %}
+    </nav>
+
+</main>
