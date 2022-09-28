@@ -4,6 +4,7 @@ module.exports = eleventyConfig => {
 
   // Layout aliases
   eleventyConfig.addLayoutAlias('base', 'layouts/base.html')
+  eleventyConfig.addLayoutAlias('base-cs', 'layouts/base-cs.html')
   eleventyConfig.addLayoutAlias('case-study', 'layouts/case-study.html')
   eleventyConfig.addLayoutAlias('post', 'layouts/post.html')
 
