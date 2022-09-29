@@ -10,7 +10,7 @@ module.exports = eleventyConfig => {
 
   // Include our static assets
   //eleventyConfig.addPassthroughCopy('./src/assets/images')
-  eleventyConfig.addPassthroughCopy("_headers");
+  eleventyConfig.addPassthroughCopy("./src/assets/fonts");
   eleventyConfig.addPassthroughCopy("./src/favicon.svg");
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
   eleventyConfig.addPassthroughCopy("./src/apple-touch-icon.png");
