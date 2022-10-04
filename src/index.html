@@ -24,10 +24,12 @@ title: Michelle May | UX/UI Design and Developer | Portfolio
     {%- for work in collections.work | reverse -%}
         <div class="grid cols-half-md cs-block js-fade">
           <div class="cs-block__img-wrap">
-            <img src="{{ work.data.cs_thumb }}" class="cs-block__img" alt="{{ work.data.cs_thumb_alt }}">
+            <picture class="cs-block__img">
+              <source type="image/webp" srcset="{{ work.data.cs_thumb }}?as=webp&width=445, {{ work.data.cs_thumb }}?as=webp&width=960 2x">
+              <img src="{{ work.data.cs_thumb }}?width=445" width="445" alt="{{ work.data.cs_thumb_alt }}">
+            </picture>
           </div>
           <div class="cs-block__text">
-            <!-- <p>{{ work.data.title }}</p> -->
             <a class="cs-block__link" href="{{ work.url }}">
               <h3 class="cs-block__header">
                 {% if work.data.locked == "yes" %}

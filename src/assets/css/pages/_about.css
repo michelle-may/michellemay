@@ -1,5 +1,5 @@
 .home, .about {
-  background-image: url("../../images/shape.png");
+  background-image: url("../../images/shape.webp");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -13,7 +13,7 @@
 
 
 .about {
-  background-image: url("../../images/shapebkg.png");
+  background-image: url("../../images/about-shape.webp");
 }
 
 .about-photo {
